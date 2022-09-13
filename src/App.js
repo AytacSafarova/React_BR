@@ -1,25 +1,30 @@
-import logo from './logo.svg';
 import './App.css';
+import Projects from './Projects';
+import Navbar from './Navbar';
+import Header from './Header';
+import About from './About';
+import Contact  from './Contact';
+import Map from './Map';
+import Footer from './Footer';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <>
+    <Navbar/>
+    <Header/>
+     <Projects/>  
+     <div className="w3-content w3-padding" style={{maxWidth:'1564px'}}>
+
+   <About/>
+    <Contact/>
+    <Map/>
     </div>
-  );
+
+    <Footer/>    
+    </>
+
+
+   );
 }
 
 export default App;
